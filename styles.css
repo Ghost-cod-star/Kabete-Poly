@@ -1,0 +1,369 @@
+<style>
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5; /* light cream */
+color: #333;
+margin: 0;
+}
+
+.social-media {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.social-icon {
+   font-size: 2rem;
+   color: #fff; /* White color */
+   margin: 0 15px;
+   transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+   color: #14d324; /* Green on hover */
+}
+
+/* Add a little spacing for better visual alignment */
+header .social-media {
+   position: absolute;
+   top: 20px;
+   right: 20px; /* Align icons to the top right corner */
+}
+
+header{
+   background-image: url('https://eafeed.com/wp-content/uploads/2020/06/kabete-national-polytechnic-768x501.jpg');
+background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px
+}
+
+header {
+background-color: #3a3a3c; /* dark grey */
+color: #167a1e;
+padding: 20px;
+text-align: center;
+
+}
+
+header h1 {
+color: #f6f7f8; /* volcano red */
+font-size: 4rem; 
+margin-bottom: 20px;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+font-size: 1.7rem; 
+margin-bottom: 10px
+}
+
+nav ul li {
+display: inline;
+margin-right: 15px;
+}
+
+nav ul li a {
+color: #14d324; /* Superman blue */
+text-decoration: none;
+font-weight: bold;
+}
+
+nav ul li a:hover {
+color: #e25822; /* volcano red for hover effect */
+}
+
+/* Section Styling */
+.jumbotron {
+  
+background-image: url('https://kabetepoly.ac.ke/assets/img/student/07.png');
+background-size: cover;
+background-position: center;
+color: #fff;
+padding: 100px; /* Increased padding */
+text-align: center;
+width: 100%;
+height: 250px; /* Set a fixed height instead of max-height */
+background-attachment: fixed; /* Optional: creates a parallax effect */
+margin-bottom: 40px; /* Changed from margin:150 to be more specific */
+background-color: #e6ccb2; /* light brown/cream */
+padding: 60px;
+text-align: center;
+color: #c7480e; /* dark grey */
+width: 100%;
+height: 600px;
+margin-bottom: 50px
+}
+.jumbotron h2 {
+font-size: 3rem; 
+margin-bottom: 20px;
+}
+
+.jumbotron p {
+font-size: 1.5rem; 
+margin-bottom: 30px;
+}
+
+.jumbotron button {
+font-size: 1.2rem; 
+padding: 12px 24px; 
+}
+
+.jumbotron button {
+background-color: #e25822; /* volcano red */
+color: #fff;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.jumbotron button:hover {
+background-color: #d04020;
+}
+
+/* Content Sections */
+.content-section {
+   background-color: #f9fafb; /* Soft light background */
+   padding: 60px 20px;
+   border-left: 5px solid #14d324; /* Green accent */
+   border-right: 5px solid #14d324; /* Green accent */
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   margin-bottom: 50px;
+}
+
+.content-section h2 {
+   color: #4d2e00; /* Dark brown */
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.content-section p {
+   font-size: 1.2rem;
+   line-height: 1.8;
+   margin-bottom: 20px;
+   color: #333; /* Dark gray */
+}
+
+.content-section button {
+   background-color: #14d324;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+#courses {
+   background: linear-gradient(to bottom, #e6f7e6, #f9fafb); /* Soft gradient background */
+   padding: 60px 20px;
+   border-top: 5px solid #14d324; /* Green accent */
+   border-bottom: 5px solid #14d324; /* Green accent */
+   text-align: center;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+#courses h2 {
+   color: #004d00; /* Dark green */
+   font-size: 2.8rem;
+   margin-bottom: 30px;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.course-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.content-section button:hover {
+   background-color: #10b71f;
+}
+
+.course {
+   background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+}
+.course:hover {
+   transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.course h3 {
+   color: #004d00; /* Dark green */
+   font-size: 1.8rem;
+   margin-bottom: 10px;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.course p {
+   color: #555; /* Medium gray */
+   font-size: 1.2rem;
+   line-height: 1.6;
+}
+button {
+   background-color: #14d324;
+   color: #fff;
+   border: none;
+   padding: 12px 24px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 30px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+button:hover {
+   background-color: #10b71f;
+   transform: translateY(-2px);
+   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#experience {
+   background-image: url('https://kabetepoly.ac.ke/assets/img/student/05.png');
+   background-size: cover;
+   background-position: center;
+   color: #fff;
+   padding: 80px 20px;
+   text-align: center;
+   width: 100%;
+   height: 600px;
+   margin-bottom: 50px
+}
+#experience p, blockquote, cite {
+   font-size: 1.3rem;
+   margin-bottom: 15px;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.enroll {
+   background-image: url('https://kabetepoly.ac.ke/assets/img/student/08.png'); 
+   background-size: cover;
+   background-position: center;
+   color: #fff;
+   text-align: center;
+   padding: 120px 20px;
+   border-top: 5px solid #14d324; /* Green accent */
+   border-bottom: 5px solid #14d324; /* Green accent */
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   height: 600px;
+   margin-bottom: 50px
+}
+.enroll h2 {
+   font-size: 3rem;
+   margin-bottom: 20px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.enroll button {
+   background-color: #14d324;
+   color: #fff;
+   border: none;
+   padding: 15px 30px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   cursor: pointer;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease-in-out;
+}
+
+.enroll button:hover {
+   background-color: #10b71f;
+   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+background-color: #3a3a3c; /* grey */
+color: #f5f5f5;
+padding: 15px;
+text-align: center;
+font-size: 14px;
+}
+
+#contact {
+   background-color: #f5f5f5;
+   padding: 60px 20px;
+   text-align: center;
+   border-top: 5px solid #14d324; /* Green accent */
+}
+
+#contact h2 {
+   color: #4d2e00; /* Dark brown */
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+
+#contactForm {
+   max-width: 600px;
+   margin: auto;
+   padding: 20px;
+   background-color: #e6ccb2; /* Light cream */
+   border-radius: 8px;
+   border: 1px solid #4d2e00; /* Dark brown */
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm label {
+   display: block;
+   color: #0047ab; /* Superman blue */
+   margin-bottom: 5px;
+   font-size: 1.1rem;
+}
+
+#contactForm input, #contactForm textarea {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #0047ab; /* Superman blue */
+   border-radius: 5px;
+   font-size: 1rem;
+}
+
+#contactForm button {
+   background-color: #14d324;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+
+#contactForm button:hover {
+   background-color: #10b71f;
+}
+
+#home {
+   text-align: center;
+}
+
+/* Styling the logo */
+.logo {
+   width: 250px;
+   height: auto;
+   margin-bottom: 15px;
+}
+footer {
+   background-color: #3a3a3c;
+   color: #f6f7f8;
+   padding: 20px;
+   text-align: center;
+   font-size: 0.9rem;
+}
+
+
+
+</style>
